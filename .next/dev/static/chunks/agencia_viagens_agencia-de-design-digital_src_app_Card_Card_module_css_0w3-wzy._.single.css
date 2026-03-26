@@ -1,0 +1,72 @@
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Card/Card.module.css [app-client] (css) */
+.Card-module__x3nWxa__card_modo_claro, .Card-module__x3nWxa__card_modo_escuro {
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 30px;
+  transition: transform .3s, box-shadow .3s, background-color .3s;
+  display: flex;
+  box-shadow: 0 4px 15px #0000000d;
+}
+
+.Card-module__x3nWxa__card_modo_claro {
+  color: #1a1a1a;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+}
+
+.Card-module__x3nWxa__card_modo_escuro {
+  color: #f5f5f5;
+  background-color: #2d2d2d;
+  border: 1px solid #3d3d3d;
+}
+
+.Card-module__x3nWxa__card_modo_claro:hover, .Card-module__x3nWxa__card_modo_escuro:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px #0003;
+}
+
+.Card-module__x3nWxa__container {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.Card-module__x3nWxa__container span {
+  text-transform: uppercase;
+  color: #ff0050;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.Card-module__x3nWxa__container h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.Card-module__x3nWxa__container small {
+  opacity: .7;
+  font-size: .95rem;
+  font-weight: 500;
+}
+
+.Card-module__x3nWxa__card_modo_claro p, .Card-module__x3nWxa__card_modo_escuro p {
+  opacity: .85;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .Card-module__x3nWxa__card_modo_claro, .Card-module__x3nWxa__card_modo_escuro {
+    padding: 20px;
+  }
+
+  .Card-module__x3nWxa__container h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=agencia_viagens_agencia-de-design-digital_src_app_Card_Card_module_css_0w3-wzy._.single.css.map*/

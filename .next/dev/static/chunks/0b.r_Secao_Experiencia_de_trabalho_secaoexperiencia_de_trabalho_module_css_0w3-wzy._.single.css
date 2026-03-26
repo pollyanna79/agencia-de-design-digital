@@ -1,0 +1,73 @@
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Secao_Experiencia_de_trabalho/secaoexperiencia_de_trabalho.module.css [app-client] (css) */
+.secaoexperiencia_de_trabalho-module__wQLxMq__secao_modo_claro {
+  color: #1a1a1a;
+  background-color: #fff;
+  padding: 80px 20px;
+  transition: all .3s;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__secao_modo_escuro {
+  color: #f5f5f5;
+  background-color: #1e1e1e;
+  padding: 80px 20px;
+  transition: all .3s;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto h2 {
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto p {
+  opacity: .8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_cards > div {
+  flex: 350px;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .secaoexperiencia_de_trabalho-module__wQLxMq__secao_modo_claro, .secaoexperiencia_de_trabalho-module__wQLxMq__secao_modo_escuro {
+    padding: 60px 15px;
+  }
+
+  .secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto {
+    margin-bottom: 30px;
+  }
+
+  .secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_cards {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto p {
+    font-size: 1rem;
+  }
+
+  .secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_cards > div {
+    flex: 100%;
+  }
+}
+
+/*# sourceMappingURL=0b.r_Secao_Experiencia_de_trabalho_secaoexperiencia_de_trabalho_module_css_0w3-wzy._.single.css.map*/

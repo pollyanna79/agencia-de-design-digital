@@ -1,0 +1,417 @@
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Topo/topo.module.css [app-client] (css) */
+.topo-module__mrGlYa__topo_modo_claro, .topo-module__mrGlYa__topo_modo_escuro {
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 5%;
+  transition: background-color .3s, border-bottom .3s;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.topo-module__mrGlYa__topo_modo_claro {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.topo-module__mrGlYa__topo_modo_escuro {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+.topo-module__mrGlYa__logo {
+  cursor: pointer;
+  width: clamp(100px, 15vw, 140px);
+  height: auto;
+}
+
+.topo-module__mrGlYa__btn_modo_claro, .topo-module__mrGlYa__btn_modo_escuro {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  transition: transform .2s, background-color .3s;
+  display: flex;
+}
+
+.topo-module__mrGlYa__btn_modo_claro {
+  background-color: #f1f1f1;
+}
+
+.topo-module__mrGlYa__btn_modo_escuro {
+  background-color: #333;
+}
+
+.topo-module__mrGlYa__btn_modo_claro:hover, .topo-module__mrGlYa__btn_modo_escuro:hover {
+  transform: scale(1.1);
+}
+
+.topo-module__mrGlYa__iconeBtn {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 1440px) {
+  .topo-module__mrGlYa__topo_modo_claro, .topo-module__mrGlYa__topo_modo_escuro {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .topo-module__mrGlYa__topo_modo_claro, .topo-module__mrGlYa__topo_modo_escuro {
+    height: 75px;
+    padding: 0 20px;
+  }
+
+  .topo-module__mrGlYa__btn_modo_claro, .topo-module__mrGlYa__btn_modo_escuro {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.module.css [app-client] (css) */
+.Rodape-module__qWafNW__rodape_modo_claro {
+  color: #1a1a1a;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  padding: 3rem 1.5rem;
+  transition: all .3s;
+}
+
+.Rodape-module__qWafNW__rodape_modo_escuro {
+  color: #f8fafc;
+  background-color: #0f172a;
+  border-top: 1px solid #1e293b;
+  padding: 3rem 1.5rem;
+  transition: all .3s;
+}
+
+.Rodape-module__qWafNW__container_informacoes {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Rodape-module__qWafNW__container_informacoes > div {
+  flex-direction: column;
+  flex: 300px;
+  display: flex;
+}
+
+.Rodape-module__qWafNW__container_informacoes p {
+  opacity: .8;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.Rodape-module__qWafNW__logo {
+  object-fit: contain;
+  max-width: 150px;
+  height: auto;
+}
+
+.Rodape-module__qWafNW__container_informacoes div:last-child {
+  flex-flow: wrap;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  display: flex;
+}
+
+.Rodape-module__qWafNW__Face, .Rodape-module__qWafNW__In, .Rodape-module__qWafNW__Xins, .Rodape-module__qWafNW__Drible, .Rodape-module__qWafNW__Beache {
+  cursor: pointer;
+  background-color: #8080801a;
+  border-radius: 8px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 6px;
+  transition: transform .3s, background-color .3s;
+}
+
+.Rodape-module__qWafNW__Face:hover, .Rodape-module__qWafNW__In:hover, .Rodape-module__qWafNW__Xins:hover, .Rodape-module__qWafNW__Drible:hover, .Rodape-module__qWafNW__Beache:hover {
+  background-color: #0070f333;
+  transform: translateY(-5px);
+}
+
+.Rodape-module__qWafNW__copyright {
+  text-align: center;
+  border-top: 1px solid #8080801a;
+  width: 100%;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  font-size: .9rem;
+}
+
+.Rodape-module__qWafNW__copyright span {
+  color: #0070f3;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .Rodape-module__qWafNW__container_informacoes div:last-child {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .Rodape-module__qWafNW__container_informacoes {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Rodape-module__qWafNW__container_informacoes div:last-child {
+    justify-content: center;
+  }
+
+  .Rodape-module__qWafNW__logo {
+    margin: 0 auto;
+  }
+}
+
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Secao_Banner/banner.module.css [app-client] (css) */
+.banner-module__GfitNa__secao_banner {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-module__GfitNa__imagemDeFundo_modo_claro, .banner-module__GfitNa__imagemDeFundo_modo_escuro {
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: background-image .5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner-module__GfitNa__imagemDeFundo_modo_claro {
+  background-image: linear-gradient(#ffffff1a, #ffffff1a), url("/public/banner-light.jpg");
+}
+
+.banner-module__GfitNa__imagemDeFundo_modo_escuro {
+  background-image: linear-gradient(#0009, #0009), url("/public/banner-dark.jpg");
+}
+
+.banner-module__GfitNa__texto_secaoBanner {
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.banner-module__GfitNa__texto_secaoBanner p {
+  letter-spacing: 4px;
+  color: #ff0050;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.banner-module__GfitNa__texto_secaoBanner h2 {
+  margin-bottom: 5px;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.banner-module__GfitNa__texto_secaoBanner span {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-style: italic;
+  font-weight: 300;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .banner-module__GfitNa__secao_banner {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-module__GfitNa__secao_banner {
+    height: 400px;
+  }
+
+  .banner-module__GfitNa__texto_secaoBanner p {
+    letter-spacing: 2px;
+    font-size: .75rem;
+  }
+
+  .banner-module__GfitNa__texto_secaoBanner h2 {
+    margin-bottom: 10px;
+  }
+}
+
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Secao_Experiencia_de_trabalho/secaoexperiencia_de_trabalho.module.css [app-client] (css) */
+.secaoexperiencia_de_trabalho-module__wQLxMq__secao_modo_claro {
+  color: #1a1a1a;
+  background-color: #fff;
+  padding: 80px 20px;
+  transition: all .3s;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__secao_modo_escuro {
+  color: #f5f5f5;
+  background-color: #1e1e1e;
+  padding: 80px 20px;
+  transition: all .3s;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto h2 {
+  margin-bottom: 20px;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto p {
+  opacity: .8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_cards > div {
+  flex: 350px;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .secaoexperiencia_de_trabalho-module__wQLxMq__secao_modo_claro, .secaoexperiencia_de_trabalho-module__wQLxMq__secao_modo_escuro {
+    padding: 60px 15px;
+  }
+
+  .secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto {
+    margin-bottom: 30px;
+  }
+
+  .secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_cards {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_texto p {
+    font-size: 1rem;
+  }
+
+  .secaoexperiencia_de_trabalho-module__wQLxMq__conteiner_cards > div {
+    flex: 100%;
+  }
+}
+
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Card/Card.module.css [app-client] (css) */
+.Card-module__x3nWxa__card_modo_claro, .Card-module__x3nWxa__card_modo_escuro {
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 30px;
+  transition: transform .3s, box-shadow .3s, background-color .3s;
+  display: flex;
+  box-shadow: 0 4px 15px #0000000d;
+}
+
+.Card-module__x3nWxa__card_modo_claro {
+  color: #1a1a1a;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+}
+
+.Card-module__x3nWxa__card_modo_escuro {
+  color: #f5f5f5;
+  background-color: #2d2d2d;
+  border: 1px solid #3d3d3d;
+}
+
+.Card-module__x3nWxa__card_modo_claro:hover, .Card-module__x3nWxa__card_modo_escuro:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px #0003;
+}
+
+.Card-module__x3nWxa__container {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.Card-module__x3nWxa__container span {
+  text-transform: uppercase;
+  color: #ff0050;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.Card-module__x3nWxa__container h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.Card-module__x3nWxa__container small {
+  opacity: .7;
+  font-size: .95rem;
+  font-weight: 500;
+}
+
+.Card-module__x3nWxa__card_modo_claro p, .Card-module__x3nWxa__card_modo_escuro p {
+  opacity: .85;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .Card-module__x3nWxa__card_modo_claro, .Card-module__x3nWxa__card_modo_escuro {
+    padding: 20px;
+  }
+
+  .Card-module__x3nWxa__container h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/page.module.css [app-client] (css) */
+.page-module__nlYJmq__container {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+}
+
+/*# sourceMappingURL=agencia_viagens_agencia-de-design-digital_src_app_0iyry3k._.css.map*/

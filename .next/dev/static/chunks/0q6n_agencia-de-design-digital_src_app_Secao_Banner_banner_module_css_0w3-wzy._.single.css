@@ -1,0 +1,87 @@
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Secao_Banner/banner.module.css [app-client] (css) */
+.banner-module__GfitNa__secao_banner {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-module__GfitNa__imagemDeFundo_modo_claro, .banner-module__GfitNa__imagemDeFundo_modo_escuro {
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: background-image .5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner-module__GfitNa__imagemDeFundo_modo_claro {
+  background-image: linear-gradient(#ffffff1a, #ffffff1a), url("/public/banner-light.jpg");
+}
+
+.banner-module__GfitNa__imagemDeFundo_modo_escuro {
+  background-image: linear-gradient(#0009, #0009), url("/public/banner-dark.jpg");
+}
+
+.banner-module__GfitNa__texto_secaoBanner {
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.banner-module__GfitNa__texto_secaoBanner p {
+  letter-spacing: 4px;
+  color: #ff0050;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.banner-module__GfitNa__texto_secaoBanner h2 {
+  margin-bottom: 5px;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.banner-module__GfitNa__texto_secaoBanner span {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-style: italic;
+  font-weight: 300;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .banner-module__GfitNa__secao_banner {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-module__GfitNa__secao_banner {
+    height: 400px;
+  }
+
+  .banner-module__GfitNa__texto_secaoBanner p {
+    letter-spacing: 2px;
+    font-size: .75rem;
+  }
+
+  .banner-module__GfitNa__texto_secaoBanner h2 {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=0q6n_agencia-de-design-digital_src_app_Secao_Banner_banner_module_css_0w3-wzy._.single.css.map*/

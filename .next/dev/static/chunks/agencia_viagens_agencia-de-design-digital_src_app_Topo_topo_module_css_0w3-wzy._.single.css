@@ -1,0 +1,77 @@
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Topo/topo.module.css [app-client] (css) */
+.topo-module__mrGlYa__topo_modo_claro, .topo-module__mrGlYa__topo_modo_escuro {
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 5%;
+  transition: background-color .3s, border-bottom .3s;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.topo-module__mrGlYa__topo_modo_claro {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.topo-module__mrGlYa__topo_modo_escuro {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+.topo-module__mrGlYa__logo {
+  cursor: pointer;
+  width: clamp(100px, 15vw, 140px);
+  height: auto;
+}
+
+.topo-module__mrGlYa__btn_modo_claro, .topo-module__mrGlYa__btn_modo_escuro {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  transition: transform .2s, background-color .3s;
+  display: flex;
+}
+
+.topo-module__mrGlYa__btn_modo_claro {
+  background-color: #f1f1f1;
+}
+
+.topo-module__mrGlYa__btn_modo_escuro {
+  background-color: #333;
+}
+
+.topo-module__mrGlYa__btn_modo_claro:hover, .topo-module__mrGlYa__btn_modo_escuro:hover {
+  transform: scale(1.1);
+}
+
+.topo-module__mrGlYa__iconeBtn {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 1440px) {
+  .topo-module__mrGlYa__topo_modo_claro, .topo-module__mrGlYa__topo_modo_escuro {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .topo-module__mrGlYa__topo_modo_claro, .topo-module__mrGlYa__topo_modo_escuro {
+    height: 75px;
+    padding: 0 20px;
+  }
+
+  .topo-module__mrGlYa__btn_modo_claro, .topo-module__mrGlYa__btn_modo_escuro {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/*# sourceMappingURL=agencia_viagens_agencia-de-design-digital_src_app_Topo_topo_module_css_0w3-wzy._.single.css.map*/

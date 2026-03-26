@@ -1,0 +1,105 @@
+/* [project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.module.css [app-client] (css) */
+.Rodape-module__qWafNW__rodape_modo_claro {
+  color: #1a1a1a;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  padding: 3rem 1.5rem;
+  transition: all .3s;
+}
+
+.Rodape-module__qWafNW__rodape_modo_escuro {
+  color: #f8fafc;
+  background-color: #0f172a;
+  border-top: 1px solid #1e293b;
+  padding: 3rem 1.5rem;
+  transition: all .3s;
+}
+
+.Rodape-module__qWafNW__container_informacoes {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Rodape-module__qWafNW__container_informacoes > div {
+  flex-direction: column;
+  flex: 300px;
+  display: flex;
+}
+
+.Rodape-module__qWafNW__container_informacoes p {
+  opacity: .8;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.Rodape-module__qWafNW__logo {
+  object-fit: contain;
+  max-width: 150px;
+  height: auto;
+}
+
+.Rodape-module__qWafNW__container_informacoes div:last-child {
+  flex-flow: wrap;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  display: flex;
+}
+
+.Rodape-module__qWafNW__Face, .Rodape-module__qWafNW__In, .Rodape-module__qWafNW__Xins, .Rodape-module__qWafNW__Drible, .Rodape-module__qWafNW__Beache {
+  cursor: pointer;
+  background-color: #8080801a;
+  border-radius: 8px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 6px;
+  transition: transform .3s, background-color .3s;
+}
+
+.Rodape-module__qWafNW__Face:hover, .Rodape-module__qWafNW__In:hover, .Rodape-module__qWafNW__Xins:hover, .Rodape-module__qWafNW__Drible:hover, .Rodape-module__qWafNW__Beache:hover {
+  background-color: #0070f333;
+  transform: translateY(-5px);
+}
+
+.Rodape-module__qWafNW__copyright {
+  text-align: center;
+  border-top: 1px solid #8080801a;
+  width: 100%;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  font-size: .9rem;
+}
+
+.Rodape-module__qWafNW__copyright span {
+  color: #0070f3;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .Rodape-module__qWafNW__container_informacoes div:last-child {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .Rodape-module__qWafNW__container_informacoes {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Rodape-module__qWafNW__container_informacoes div:last-child {
+    justify-content: center;
+  }
+
+  .Rodape-module__qWafNW__logo {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=06kt_viagens_agencia-de-design-digital_src_app_Rodape_Rodape_module_css_0w3-wzy._.single.css.map*/

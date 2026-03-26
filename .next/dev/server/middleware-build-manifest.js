@@ -1,0 +1,50 @@
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/_app": [
+      "static/chunks/0ku9_next_dist_compiled_0wmmmyf._.js",
+      "static/chunks/0ku9_next_dist_shared_lib_0p-6buv._.js",
+      "static/chunks/0ku9_next_dist_client_0vbtld5._.js",
+      "static/chunks/0ku9_next_dist_0yokben._.js",
+      "static/chunks/0ku9_next_app_0kzswsk.js",
+      "static/chunks/[next]_entry_page-loader_ts_0_~w7y5._.js",
+      "static/chunks/0ku9_react-dom_099i_jc._.js",
+      "static/chunks/0ku9_0uvhg.u._.js",
+      "static/chunks/[root-of-the-server]__0a9lt6b._.js",
+      "static/chunks/agencia_viagens_agencia-de-design-digital_pages__app_07xvfw~._.js",
+      "static/chunks/turbopack-agencia_viagens_agencia-de-design-digital_pages__app_06aplq6._.js"
+    ],
+    "/_error": [
+      "static/chunks/0ku9_next_dist_compiled_0wmmmyf._.js",
+      "static/chunks/0ku9_next_dist_shared_lib_0jr5k2l._.js",
+      "static/chunks/0ku9_next_dist_client_0vbtld5._.js",
+      "static/chunks/0ku9_next_dist_11e-z~i._.js",
+      "static/chunks/[next]_entry_page-loader_ts_0ay218q._.js",
+      "static/chunks/0ku9_react-dom_099i_jc._.js",
+      "static/chunks/0ku9_0uvhg.u._.js",
+      "static/chunks/[root-of-the-server]__0z3zp2b._.js",
+      "static/chunks/agencia_viagens_agencia-de-design-digital_pages__error_07xvfw~._.js",
+      "static/chunks/turbopack-agencia_viagens_agencia-de-design-digital_pages__error_0kw4gil._.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/0ku9_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js",
+    "static/development/_clientMiddlewareManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_03ep2xo._.js",
+    "static/chunks/0ku9_next_dist_compiled_next-devtools_index_0j8oxln.js",
+    "static/chunks/0ku9_next_dist_compiled_react-dom_0_np9ze._.js",
+    "static/chunks/0ku9_next_dist_compiled_react-server-dom-turbopack_0hth3yl._.js",
+    "static/chunks/0ku9_next_dist_compiled_0wgoelj._.js",
+    "static/chunks/0ku9_next_dist_client_0ac992u._.js",
+    "static/chunks/0ku9_next_dist_07s140~._.js",
+    "static/chunks/0ku9_@swc_helpers_cjs_0t02166._.js",
+    "static/chunks/agencia_viagens_agencia-de-design-digital_0rqeker._.js",
+    "static/chunks/turbopack-agencia_viagens_agencia-de-design-digital_13yi069._.js"
+  ]
+};
