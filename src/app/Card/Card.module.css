@@ -11,20 +11,42 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
 }
+/* Estilo Base do Card (adicione ao que você já tem) */
+.card_base {
+    padding: 20px;
+    border: 2px solid transparent; /* Reserva o espaço da borda */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
-/* Modo Claro */
+/* MODO CLARO: Azul ao clicar */
 .card_modo_claro {
-    background-color: #ffffff;
-    border: 1px solid #f0f0f0;
+    background-color: #f9f9f9;
     color: #1a1a1a;
 }
 
-/* Modo Escuro */
+.card_selecionado_claro {
+    background-color: #0070f3 !important; /* Azul */
+    border-color: #0070f3 !important;
+    color: #ffffff !important;
+}
+
+/* MODO ESCURO: Amarelo ao clicar */
 .card_modo_escuro {
     background-color: #2d2d2d;
-    border: 1px solid #3d3d3d;
     color: #f5f5f5;
 }
+
+.card_selecionado_escuro {
+    background-color: #ffce00 !important; /* Amarelo */
+    border-color: #ffffff !important; /* Borda branca/clara no modo escuro */
+    color: #000000 !important;
+}
+
+
+
+
 
 /* Efeito ao passar o mouse */
 .card_modo_claro:hover, 
