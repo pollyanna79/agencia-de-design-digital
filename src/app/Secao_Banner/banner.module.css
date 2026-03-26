@@ -1,59 +1,93 @@
+/* Container Principal */
 .secao_banner {
-    height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Ocupa 60% da altura da tela */
+    min-height: 400px; /* Garante que não fique esmagado em telas muito pequenas */
     display: flex;
-  }
-  
-  .secao_banner div:nth-child(1) {
-    width: 50%;
-    background-image: url('/banner.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-  }
-  
-  .imagemDeFundo_modo_claro {
-    background-color: #fff;
-  }
-  
-  .imagemDeFundo_modo_escuro {
-    background-color: #252525;
-  }
-  
-  .texto_secaoBanner {
-    width: 50%;
-    padding: 0px 20px;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-color: #fafbfc;
-  }
-  
-  .texto_secaoBanner p {
-    font-size: 12px;
-    letter-spacing: 5px;
-    font-weight: 500;
-    color: #022144;
-  }
-  
-  .texto_secaoBanner h2 {
-    font-size: 50px;
-    font-weight: 500;
-    color: #022144;
-  }
-  
-  .texto_secaoBanner span {
-    font-size: 50px;
-    font-weight: 900;
-    color: #022144;
-  }
-  
-  @media (max-width: 768px){
-    .secao_banner div:nth-child(1) {
-      display: none;
+    overflow: hidden;
+}
+
+/* Camada da Imagem de Fundo - Com efeito de transição suave */
+.imagemDeFundo_modo_claro, 
+.imagemDeFundo_modo_escuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+    z-index: 1;
+}
+
+/* Exemplo de caminhos de imagem (ajuste conforme suas pastas) */
+.imagemDeFundo_modo_claro {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/public/banner-light.jpg');
+}
+
+.imagemDeFundo_modo_escuro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/public/banner-dark.jpg');
+}
+
+/* Bloco de Texto Centralizado */
+.texto_secaoBanner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.texto_secaoBanner p {
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: #ff0050; /* Uma cor de destaque, ajuste se preferir */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.texto_secaoBanner h2 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem); /* Fonte que aumenta/diminui conforme a tela */
+    line-height: 1.1;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.texto_secaoBanner span {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 300;
+    font-style: italic;
+    display: block;
+}
+
+/* --- Ajustes de Responsividade --- */
+
+/* Telas Médias (Tablets) */
+@media (max-width: 768px) {
+    .secao_banner {
+        height: 50vh;
     }
-  
-    .texto_secaoBanner {
-      width: 100%;
+}
+
+/* Telas Pequenas (Celulares) */
+@media (max-width: 480px) {
+    .secao_banner {
+        height: 400px; /* Mantém uma altura fixa mínima no celular */
     }
-  }
+
+    .texto_secaoBanner p {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+    
+    .texto_secaoBanner h2 {
+        margin-bottom: 10px;
+    }
+}

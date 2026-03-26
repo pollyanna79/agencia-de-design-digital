@@ -1,76 +1,77 @@
+/* Container Geral da Seção */
 .secao_modo_claro {
-  width: 100%;
-  padding: 100px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  background-color: #f6f8fc;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    padding: 80px 20px;
+    transition: all 0.3s ease;
 }
 
 .secao_modo_escuro {
-  width: 100%;
-  padding: 100px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  background-color: #393838;
-  color: #CCCCCC;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    padding: 80px 20px;
+    transition: all 0.3s ease;
 }
 
-.secao_modo_claro h2 {
-  color: #32333c;
+/* Bloco de Texto (Título e Descrição) */
+.conteiner_texto {
+    max-width: 800px;
+    margin: 0 auto 50px auto; /* Centraliza e dá espaço para os cards */
+    text-align: center;
 }
-
-.secao_modo_escuro div:nth-child(1) p {
-  color: #CCCCCC;
-}
-
 
 .conteiner_texto h2 {
-  position: relative;
-  font-size: 45px;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding-bottom: 20px;
-  margin-bottom: 35px;
-  text-align: center;
-}
-
-.conteiner_texto h2::before{
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 100px;
-  height: 4px;
-  background-color: #feb633;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .conteiner_texto p {
-  font-size: 18px;
-  font-weight: 400;
-  max-width: 770px;
-  width: 100%;
-  text-align: center;
-  color: #8a8fa3;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.8;
 }
 
+/* Grid de Cards - O segredo da responsividade */
 .conteiner_cards {
-  max-width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Garante que todos os cards tenham a mesma altura */
+    flex-wrap: wrap; /* Faz os cards pularem de linha em telas menores */
+    gap: 30px; /* Espaço entre os cards */
 }
 
-@media screen and (max-width: 768px) {
-  .conteiner_cards {
-    flex-direction: column;
-  }
+/* Ajuste nos Cards para serem flexíveis */
+.conteiner_cards > div {
+    flex: 1 1 350px; /* Tenta manter 350px, mas cresce ou encolhe se precisar */
+    max-width: 400px; /* Evita que o card fique largo demais em telas médias */
+}
+
+/* --- Ajustes para Telas Menores --- */
+
+@media (max-width: 768px) {
+    .secao_modo_claro, .secao_modo_escuro {
+        padding: 60px 15px;
+    }
+
+    .conteiner_texto {
+        margin-bottom: 30px;
+    }
+
+    .conteiner_cards {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteiner_texto p {
+        font-size: 1rem;
+    }
+    
+    /* No celular bem pequeno, o card ocupa a largura quase toda */
+    .conteiner_cards > div {
+        flex: 1 1 100%;
+    }
 }

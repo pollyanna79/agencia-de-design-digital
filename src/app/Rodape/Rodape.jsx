@@ -31,7 +31,7 @@ export default function Rodape(props){
                 </div>
                 </div>
                 <div className={estilos.copyright}>
-                    <p>Copyright 2022 nome do <span>Pollyanna</span></p>
+                    <p>Copyright 2026 nome do Desenvolvedor <span>Pollyanna</span></p>
                 </div>
 
            

@@ -1,51 +1,81 @@
+/* Estilo Base do Card (Comum aos dois temas) */
+.card_modo_claro, 
+.card_modo_escuro {
+    width: 100%; /* Ocupa todo o espaço do flex-item pai */
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+}
+
+/* Modo Claro */
 .card_modo_claro {
-    flex: 1 1 300px;
-    padding: 70px 30px;
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    color: #1a1a1a;
+}
+
+/* Modo Escuro */
+.card_modo_escuro {
+    background-color: #2d2d2d;
+    border: 1px solid #3d3d3d;
+    color: #f5f5f5;
+}
+
+/* Efeito ao passar o mouse */
+.card_modo_claro:hover, 
+.card_modo_escuro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Container do Cabeçalho do Card (Data, Título, Empresa) */
+.container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    cursor: pointer;
-    border: 1px solid #edecec;
-  }
-  
-  .card_modo_escuro {
-    flex: 1 1 300px;
-    padding: 70px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    cursor: pointer;
-    border: 1px solid #ffffff0d;
-  }
-  
-  .card_modo_claro:hover,
-  .card_modo_escuro:hover {
-    background-color: #feb633;
-    color: black !important;
-    transition: all 1s;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .container h3 {
-    font-size: 24px;
-  }
-  
-  .card_modo_escuro h3 {
-    color: #fff;
-  }
-  
-  .container small {
-    font-style: italic;
-  }
-  
-  .card_modo_claro p,
-  .card_modo_escuro p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-  }
+    gap: 8px;
+}
+
+.container span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ff0050; /* Cor de destaque para a data */
+}
+
+.container h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.container small {
+    font-size: 0.95rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+/* Parágrafo de Descrição */
+.card_modo_claro p, 
+.card_modo_escuro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* --- Ajustes de Responsividade --- */
+
+@media (max-width: 480px) {
+    .card_modo_claro, 
+    .card_modo_escuro {
+        padding: 20px;
+    }
+
+    .container h3 {
+        font-size: 1.2rem;
+    }
+}

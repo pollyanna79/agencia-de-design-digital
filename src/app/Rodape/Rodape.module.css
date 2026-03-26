@@ -1,72 +1,115 @@
+/* Container Principal - Adaptável à altura do conteúdo */
 .rodape_modo_claro {
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    padding: 3rem 1.5rem; /* Usando rem para escala consistente */
+    border-top: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+}
+
+.rodape_modo_escuro {
+    background-color: #0f172a; /* Azul bem escuro moderno */
+    color: #f8fafc;
+    padding: 3rem 1.5rem;
+    border-top: 1px solid #1e293b;
+    transition: all 0.3s ease;
+}
+
+/* Container de Conteúdo - O segredo da adaptabilidade */
+.container_informacoes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Faz os itens "pularem" de linha se não couberem */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem; /* Espaçamento entre os blocos */
+}
+
+/* Blocos Internos (Texto e Redes Sociais) */
+.container_informacoes > div {
+    flex: 1 1 300px; /* Cresce, encolhe e tenta manter 300px de largura */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .rodape_modo_escuro {
-    background-color: #252525;
+}
+
+/* Texto de Apoio */
+.container_informacoes p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+}
+
+/* Logo */
+.logo {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Container dos Ícones Sociais - Alinhamento inteligente */
+.container_informacoes div:last-child {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .rodape_modo_escuro p{
-    color: #fff;
-  }
-  
-  .paragrafo {
-    max-width: 600px;
-    padding: 0px 20px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #8a8fa3;
-    text-align: center;
-  }
-  
-  .rodape_modo_escuro .copyright {
-    border-top: 1px solid #ffffff0d;
-  }
-  
-  .container_informacoes {
-    padding: 100px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .container_informacoes div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .container_informacoes div:nth-child(2) {
-    width: 100%;
-    max-width: 375px;
-    padding: 0px 5px;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .container_informacoes div:nth-child(2) img {
-    width: 45px;
-    height: 45px;
+    flex-direction: row; /* Ícones lado a lado */
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: flex-start; /* Alinha à esquerda em telas pequenas */
+}
+
+/* Estilo Individual dos Ícones */
+.Face, .In, .Xins, .Drible, .Beache {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 8px; /* Cantos levemente arredondados */
+    padding: 6px;
+    background-color: rgba(128, 128, 128, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s;
     cursor: pointer;
-  }
-  
-  .copyright {
+}
+
+.Face:hover, .In:hover, .Xins:hover, .Drible:hover, .Beache:hover {
+    transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+    background-color: rgba(0, 112, 243, 0.2);
+}
+
+/* Copyright - Sempre centralizado no final */
+.copyright {
     width: 100%;
-    font-weight: 600;
-    color: #8a8fa3;
-    padding: 20px 0px;
     text-align: center;
-  }
-  
-  .copyright span {
-    color: #fcc520;
-  }
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.1);
+    font-size: 0.9rem;
+}
+
+.copyright span {
+    font-weight: 700;
+    color: #0070f3;
+}
+
+/* --- Ajustes de Tela (Responsividade Extrema) --- */
+
+/* Telas Médias (Tablets) */
+@media (min-width: 768px) {
+    .container_informacoes div:last-child {
+        justify-content: flex-end; /* Ícones vão para a direita em telas grandes */
+    }
+}
+
+/* Telas Pequenas (Celulares) */
+@media (max-width: 600px) {
+    .container_informacoes {
+        flex-direction: column;
+        align-items: center; /* Centraliza tudo no celular */
+        text-align: center;
+    }
+
+    .container_informacoes div:last-child {
+        justify-content: center; /* Centraliza ícones no celular */
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+}
