@@ -1,11 +1,6 @@
 import estilos from './Rodape.module.css';
 import Image from 'next/image';
-import Logo from "/public/logo.png";
-import Face from "/public/facebook.png";
-import Linkedin from "/public/linkedin.png";
-import Twiter from "/public/twitter.png";
-import Drible from "/public/dribble.png";
-import Behance from "/public/behance.png";
+
 
 
 
@@ -17,17 +12,17 @@ export default function Rodape(props){
                 
 
                 <div>
-                <Image className={estilos.logo} src={Logo} alt="logomarca"/>
+                <Image src= "/logo.png" alt="Logo" width={100} height={50}/>
                 <p>Ajudamos a criar uma personalidade digital construindo sua marca no
                 ambiente online utilizando estratégias,ferramentas e tecnologias 
                 personalizadas. </p>
                 </div>
                 <div>
-            <Image className={estilos.Face} src={Face} alt="face"/>
-            <Image className={estilos.In} src={Linkedin} alt="Linkedin"/>
-            <Image className={estilos.Xins} src={Twiter} alt="Twiter"/>
-            <Image className={estilos.Drible} src={Drible} alt="Drible"/>
-            <Image className={estilos.Beache} src={Behance} alt="Behance"/>
+            <Image src= "/facebook.png" width={100} height={50} alt="face"/>
+            <Image src= "/linkedin.png" width={100} height={50} alt="Linkedin"/>
+            <Image src="/twitter.png"width={100} height={50} alt="Twiter"/>
+            <Image src="/dribble.png"width={100} height={50} alt="Drible"/>
+            <Image src="/behance.png"width={100} height={50} alt="Behance"/>
                 </div>
                 </div>
                 <div className={estilos.copyright}>

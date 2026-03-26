@@ -20,24 +20,6 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/agencia_viagens/agencia-de-design-digital/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Topo$2f$topo$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/agencia_viagens/agencia-de-design-digital/src/app/Topo/topo.module.css [app-ssr] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/agencia_viagens/agencia-de-design-digital/node_modules/next/image.js [app-ssr] (ecmascript)");
-(()=>{
-    const e = new Error("Cannot find module '/public/logo.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-(()=>{
-    const e = new Error("Cannot find module '/public/sun.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-(()=>{
-    const e = new Error("Cannot find module '/public/moon.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-;
-;
-;
 ;
 ;
 ;
@@ -46,12 +28,13 @@ function Topo(props) {
         className: props.ehTemaEscuro ? __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Topo$2f$topo$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].topo_modo_escuro : __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Topo$2f$topo$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].topo_modo_claro,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Topo$2f$topo$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].logo,
-                src: Logo,
+                src: "/logo.png",
+                width: 100,
+                height: 50,
                 alt: "logomarca"
             }, void 0, false, {
                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Topo/Topo.jsx",
-                lineNumber: 12,
+                lineNumber: 10,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -59,22 +42,24 @@ function Topo(props) {
                 className: props.ehTemaEscuro ? __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Topo$2f$topo$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].btn_modo_escuro : __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Topo$2f$topo$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].btn_modo_claro,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Topo$2f$topo$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].iconeBtn,
-                    src: props.ehTemaEscuro ? iconeLua : iconeSol,
+                    src: props.ehTemaEscuro ? "/moon.png" : "/sun.png",
+                    width: 30,
+                    height: 30,
                     alt: "icone"
                 }, void 0, false, {
                     fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Topo/Topo.jsx",
-                    lineNumber: 15,
+                    lineNumber: 13,
                     columnNumber: 10
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Topo/Topo.jsx",
-                lineNumber: 14,
+                lineNumber: 12,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Topo/Topo.jsx",
-        lineNumber: 11,
+        lineNumber: 9,
         columnNumber: 9
     }, this);
 }
@@ -104,42 +89,6 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/agencia_viagens/agencia-de-design-digital/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Rodape$2f$Rodape$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.module.css [app-ssr] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/agencia_viagens/agencia-de-design-digital/node_modules/next/image.js [app-ssr] (ecmascript)");
-(()=>{
-    const e = new Error("Cannot find module '/public/logo.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-(()=>{
-    const e = new Error("Cannot find module '/public/facebook.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-(()=>{
-    const e = new Error("Cannot find module '/public/linkedin.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-(()=>{
-    const e = new Error("Cannot find module '/public/twitter.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-(()=>{
-    const e = new Error("Cannot find module '/public/dribble.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-(()=>{
-    const e = new Error("Cannot find module '/public/behance.png'");
-    e.code = 'MODULE_NOT_FOUND';
-    throw e;
-})();
-;
-;
-;
-;
-;
-;
 ;
 ;
 ;
@@ -153,84 +102,90 @@ function Rodape(props) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Rodape$2f$Rodape$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].logo,
-                                src: Logo,
-                                alt: "logomarca"
+                                src: "/logo.png",
+                                alt: "Logo",
+                                width: 100,
+                                height: 50
                             }, void 0, false, {
                                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                                lineNumber: 20,
+                                lineNumber: 15,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Ajudamos a criar uma personalidade digital construindo sua marca no ambiente online utilizando estratégias,ferramentas e tecnologias personalizadas. "
                             }, void 0, false, {
                                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                                lineNumber: 21,
+                                lineNumber: 16,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                        lineNumber: 19,
+                        lineNumber: 14,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Rodape$2f$Rodape$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].Face,
-                                src: Face,
+                                src: "/facebook.png",
+                                width: 100,
+                                height: 50,
                                 alt: "face"
                             }, void 0, false, {
                                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                                lineNumber: 26,
+                                lineNumber: 21,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Rodape$2f$Rodape$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].In,
-                                src: Linkedin,
+                                src: "/linkedin.png",
+                                width: 100,
+                                height: 50,
                                 alt: "Linkedin"
                             }, void 0, false, {
                                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                                lineNumber: 27,
+                                lineNumber: 22,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Rodape$2f$Rodape$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].Xins,
-                                src: Twiter,
+                                src: "/twitter.png",
+                                width: 100,
+                                height: 50,
                                 alt: "Twiter"
                             }, void 0, false, {
                                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                                lineNumber: 28,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Rodape$2f$Rodape$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].Drible,
-                                src: Drible,
+                                src: "/dribble.png",
+                                width: 100,
+                                height: 50,
                                 alt: "Drible"
                             }, void 0, false, {
                                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                                lineNumber: 29,
+                                lineNumber: 24,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$src$2f$app$2f$Rodape$2f$Rodape$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].Beache,
-                                src: Behance,
+                                src: "/behance.png",
+                                width: 100,
+                                height: 50,
                                 alt: "Behance"
                             }, void 0, false, {
                                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                                lineNumber: 30,
+                                lineNumber: 25,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                        lineNumber: 25,
+                        lineNumber: 20,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                lineNumber: 16,
+                lineNumber: 11,
                 columnNumber: 14
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$agencia_viagens$2f$agencia$2d$de$2d$design$2d$digital$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -242,24 +197,24 @@ function Rodape(props) {
                             children: "Pollyanna"
                         }, void 0, false, {
                             fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                            lineNumber: 34,
+                            lineNumber: 29,
                             columnNumber: 61
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                    lineNumber: 34,
+                    lineNumber: 29,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-                lineNumber: 33,
+                lineNumber: 28,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/agencia_viagens/agencia-de-design-digital/src/app/Rodape/Rodape.jsx",
-        lineNumber: 15,
+        lineNumber: 10,
         columnNumber: 9
     }, this);
 }
